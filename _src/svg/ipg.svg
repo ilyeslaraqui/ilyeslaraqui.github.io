@@ -1,0 +1,87 @@
+<svg viewBox="0 0 620 230" font-size="10">
+<line x1="44" x2="606" y1="196.0" y2="196.0" stroke="#e3e6ea" stroke-width="1"/>
+<text x="38" y="199.5" text-anchor="end" fill="#5d6672">160</text>
+<line x1="44" x2="606" y1="136.0" y2="136.0" stroke="#e3e6ea" stroke-width="1"/>
+<text x="38" y="139.5" text-anchor="end" fill="#5d6672">190</text>
+<line x1="44" x2="606" y1="76.0" y2="76.0" stroke="#e3e6ea" stroke-width="1"/>
+<text x="38" y="79.5" text-anchor="end" fill="#5d6672">220</text>
+<line x1="44" x2="606" y1="16.0" y2="16.0" stroke="#e3e6ea" stroke-width="1"/>
+<text x="38" y="19.5" text-anchor="end" fill="#5d6672">250</text>
+<circle cx="48.5" cy="26.9" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT--0,2_FC--3_RSG-4_RT--0,2_RC-0_DIFF-Open: 244.5</title></circle>
+<circle cx="57.4" cy="32.2" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT--0,2_FC--2_RSG-4_RT--0,2_RC-0_DIFF-Open: 241.9</title></circle>
+<circle cx="66.3" cy="35.5" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0_FC--2_RSG-4_RT--0,2_RC-0_DIFF-Open: 240.2</title></circle>
+<circle cx="75.2" cy="38.3" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0,2_FC--2_RSG-4_RT--0,2_RC-0_DIFF-Open: 238.8</title></circle>
+<circle cx="84.1" cy="39.8" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-5_FT--0,2_FC--3_RSG-4_RT--0,2_RC-0_DIFF-Open: 238.1</title></circle>
+<circle cx="93.1" cy="48.8" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0_FC--1_RSG-4_RT--0,2_RC-0_DIFF-Open: 233.6</title></circle>
+<circle cx="102.0" cy="49.6" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT--0,2_FC--1_RSG-4_RT--0,2_RC-0_DIFF-Open: 233.2</title></circle>
+<circle cx="110.9" cy="50.8" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-5_FT--0,2_FC--3_RSG-3_RT--0,2_RC-0_DIFF-Open: 232.6</title></circle>
+<circle cx="119.8" cy="50.9" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-5_FT--0,2_FC--3_RSG-1_RT--0,2_RC-0_DIFF-Open: 232.5</title></circle>
+<circle cx="128.7" cy="50.9" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-5_FT--0,2_FC--3_RSG-1_RT--0,2_RC-0_DIFF-Open: 232.5</title></circle>
+<circle cx="137.7" cy="51.2" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT--0,2_RC-1_DIFF-Open: 232.4</title></circle>
+<circle cx="146.6" cy="51.2" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0,2_FC--1_RSG-4_RT--0,2_RC-0_DIFF-Open: 232.4</title></circle>
+<circle cx="155.5" cy="51.4" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT--0,2_RC-0_DIFF-Open: 232.3</title></circle>
+<circle cx="164.4" cy="51.4" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT--0,2_RC-0_DIFF-Open: 232.3</title></circle>
+<circle cx="173.3" cy="52.0" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0_RC-1_DIFF-Open: 232.0</title></circle>
+<circle cx="182.3" cy="52.2" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0_FC--3_RSG-1_RT--0,2_RC-0_DIFF-Open: 231.9</title></circle>
+<circle cx="191.2" cy="53.2" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0,2_FC--3_RSG-1_RT--0,2_RC-0_DIFF-Open: 231.4</title></circle>
+<circle cx="200.1" cy="53.5" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-5_FT--0,2_FC--3_RSG-2_RT--0,2_RC-0_DIFF-Open: 231.2</title></circle>
+<circle cx="209.0" cy="54.2" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0,2_RC-1_DIFF-Open: 230.9</title></circle>
+<circle cx="218.0" cy="54.6" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-2_FT--0,2_FC--3_RSG-1_RT--0,2_RC-0_DIFF-Open: 230.7</title></circle>
+<circle cx="226.9" cy="55.3" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0_RC-0_DIFF-Open: 230.4</title></circle>
+<circle cx="235.8" cy="55.4" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-4_FT--0,2_FC--3_RSG-1_RT--0,2_RC-0_DIFF-Open: 230.3</title></circle>
+<circle cx="244.7" cy="55.7" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT--0,2_RC--1_DIFF-Open: 230.2</title></circle>
+<circle cx="253.6" cy="57.0" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-3_FT--0,2_FC--3_RSG-1_RT--0,2_RC-0_DIFF-Open: 229.5</title></circle>
+<circle cx="262.6" cy="57.0" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0,2_RC-0_DIFF-Open: 229.5</title></circle>
+<circle cx="271.5" cy="58.9" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0_FC-0_RSG-4_RT--0,2_RC-0_DIFF-Open: 228.6</title></circle>
+<circle cx="280.4" cy="59.5" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0_RC--1_DIFF-Open: 228.3</title></circle>
+<circle cx="289.3" cy="61.4" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0,2_RC--1_DIFF-Open: 227.3</title></circle>
+<circle cx="298.2" cy="61.6" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0,2_FC-0_RSG-4_RT--0,2_RC-0_DIFF-Open: 227.2</title></circle>
+<circle cx="307.2" cy="62.8" r="4.2" fill="#fff" stroke="#2f6fd0" stroke-width="1.8"><title>4EM_N-DP_FSG-5_FT--0,2_FC--2_RSG-4_RT--0,2_RC-0_DIFF-Open: 226.6</title></circle>
+<circle cx="316.1" cy="63.7" r="4.2" fill="#fff" stroke="#2f6fd0" stroke-width="1.8"><title>4EM_N-DP_FSG-3_FT--0,2_FC--2_RSG-4_RT--0,2_RC-0_DIFF-Open: 226.2</title></circle>
+<circle cx="325.0" cy="64.5" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0_RC--2_DIFF-Open: 225.8</title></circle>
+<circle cx="333.9" cy="65.7" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT--0,2_RC--2_DIFF-Open: 225.1</title></circle>
+<circle cx="342.8" cy="67.1" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0,2_RC--2_DIFF-Open: 224.4</title></circle>
+<circle cx="351.8" cy="67.2" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-5_FT--0,2_FC--3_RSG-5_RT--0,2_RC-0_DIFF-Open: 224.4</title></circle>
+<circle cx="360.7" cy="68.7" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0,2_RC--3_DIFF-Open: 223.6</title></circle>
+<circle cx="369.6" cy="68.9" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT--0,2_FC-1_RSG-4_RT--0,2_RC-0_DIFF-Open: 223.6</title></circle>
+<circle cx="378.5" cy="69.7" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0_FC--2_RSG-1_RT--0,2_RC-0_DIFF-Open: 223.1</title></circle>
+<circle cx="387.4" cy="69.8" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--3_RSG-1_RT-0_RC--3_DIFF-Open: 223.1</title></circle>
+<circle cx="396.4" cy="70.3" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0,2_FC--2_RSG-1_RT--0,2_RC-0_DIFF-Open: 222.8</title></circle>
+<circle cx="405.3" cy="71.5" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--2_RSG-1_RT--0,2_RC-0_DIFF-Open: 222.2</title></circle>
+<circle cx="414.2" cy="71.5" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0_FC-1_RSG-4_RT--0,2_RC-0_DIFF-Open: 222.2</title></circle>
+<circle cx="423.1" cy="72.6" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0,2_FC-1_RSG-4_RT--0,2_RC-0_DIFF-Open: 221.7</title></circle>
+<circle cx="432.0" cy="73.2" r="4.2" fill="#fff" stroke="#2f6fd0" stroke-width="1.8"><title>4EM_N-DP_FSG-1_FT--0,2_FC--2_RSG-4_RT--0,2_RC-0_DIFF-Open: 221.4</title></circle>
+<circle cx="441.0" cy="74.2" r="4.2" fill="#fff" stroke="#2f6fd0" stroke-width="1.8"><title>4EM_N-DP_FSG-5_FT--0,2_FC--1_RSG-4_RT--0,2_RC-0_DIFF-Open: 220.9</title></circle>
+<circle cx="449.9" cy="80.4" r="4.2" fill="#fff" stroke="#2f6fd0" stroke-width="1.8"><title>4EM_N-DP_FSG-5_FT--0,2_FC--3_RSG-4_RT--0,2_RC-0_DIFF-Open: 217.8</title></circle>
+<circle cx="458.8" cy="80.6" r="4.2" fill="#fff" stroke="#2f6fd0" stroke-width="1.8"><title>4EM_N-DP_FSG-2_FT--0,2_FC--2_RSG-4_RT--0,2_RC-0_DIFF-Open: 217.7</title></circle>
+<circle cx="467.7" cy="81.9" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0,2_FC--1_RSG-1_RT--0,2_RC-0_DIFF-Open: 217.0</title></circle>
+<circle cx="476.7" cy="84.0" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC--1_RSG-1_RT--0,2_RC-0_DIFF-Open: 216.0</title></circle>
+<circle cx="485.6" cy="84.4" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0_FC--1_RSG-1_RT--0,2_RC-0_DIFF-Open: 215.8</title></circle>
+<circle cx="494.5" cy="87.9" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0_FC--3_RSG-4_RT--0,2_RC-0_DIFF-Open: 214.0</title></circle>
+<circle cx="503.4" cy="88.8" r="4.2" fill="#fff" stroke="#c2185b" stroke-width="1.8"><title>1EM_N-DP_FSG-5_FT-0,2_FC--3_RSG-4_RT--0,2_RC-0_DIFF-Open: 213.6</title></circle>
+<circle cx="512.3" cy="89.1" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0_FC-0_RSG-1_RT--0,2_RC-0_DIFF-Open: 213.4</title></circle>
+<circle cx="521.3" cy="89.2" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0_FC-0_RSG-1_RT--0,2_RC-0_DIFF-Open: 213.4</title></circle>
+<circle cx="530.2" cy="91.9" r="4.2" fill="#fff" stroke="#2f6fd0" stroke-width="1.8"><title>4EM_N-DP_FSG-4_FT--0,2_FC--2_RSG-4_RT--0,2_RC-0_DIFF-Open: 212.0</title></circle>
+<circle cx="539.1" cy="92.5" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0,2_FC-0_RSG-1_RT--0,2_RC-0_DIFF-Open: 211.8</title></circle>
+<circle cx="548.0" cy="93.2" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT--0,2_FC-0_RSG-1_RT--0,2_RC-0_DIFF-Open: 211.4</title></circle>
+<circle cx="556.9" cy="95.2" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0_FC-0_RSG-1_RT--0,2_RC-0_DIFF-SenseTight: 210.4</title></circle>
+<circle cx="565.9" cy="97.4" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0_FC-1_RSG-1_RT--0,2_RC-0_DIFF-Open: 209.3</title></circle>
+<circle cx="574.8" cy="97.6" r="4.2" fill="#2f6fd0" stroke="#2f6fd0" stroke-width="1.8"><title>4EM_Y-DP_FSG-5_FT--0,2_FC--2_RSG-4_RT--0,2_RC-0_DIFF-Open: 209.2</title></circle>
+<circle cx="583.7" cy="97.7" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0,2_FC-1_RSG-1_RT--0,2_RC-0_DIFF-Open: 209.2</title></circle>
+<circle cx="592.6" cy="100.1" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0_FC-0_RSG-1_RT--0,2_RC-0_DIFF-SenseLoose: 208.0</title></circle>
+<circle cx="601.5" cy="179.5" r="4.2" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"><title>1EM_Y-DP_FSG-1_FT-0_FC-0_RSG-1_RT--0,2_RC-0_DIFF-Locked: 168.3</title></circle>
+<path d="M54.5 26.9 L88.5 26.9" stroke="#14171c" stroke-width="1"/>
+<text x="92.5" y="30.4" fill="#14171c" font-weight="600">Best: 244.5 pts (single motor, no aero package, open diff)</text>
+<text x="44" y="214" fill="#5d6672">← highest score</text>
+<text x="606" y="214" fill="#5d6672" text-anchor="end">lowest score →</text>
+<text x="325.0" y="227" fill="#5d6672" text-anchor="middle">63 completed configurations, ranked</text>
+<text x="592.5" y="183.0" fill="#5d6672" text-anchor="end">locked differential: 168.3 pts</text>
+<circle cx="58" cy="160.0" r="4" fill="#c2185b" stroke="#c2185b" stroke-width="1.8"/>
+<text x="67" y="163.5" fill="#2b3038">single motor, aero pack</text>
+<circle cx="198" cy="160.0" r="4" fill="#fff" stroke="#c2185b" stroke-width="1.8"/>
+<text x="207" y="163.5" fill="#2b3038">single motor, no aero</text>
+<circle cx="58" cy="175.0" r="4" fill="#2f6fd0" stroke="#2f6fd0" stroke-width="1.8"/>
+<text x="67" y="178.5" fill="#2b3038">4 motors, aero pack</text>
+<circle cx="198" cy="175.0" r="4" fill="#fff" stroke="#2f6fd0" stroke-width="1.8"/>
+<text x="207" y="178.5" fill="#2b3038">4 motors, no aero</text>
+</svg>

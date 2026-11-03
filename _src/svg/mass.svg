@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 88" font-size="7.4">
+            <g fill="#5d6672" text-anchor="end">
+              <text x="48" y="14">Wishbones</text><text x="48" y="35">Pull-rods</text><text x="48" y="56">Rocker</text><text x="48" y="77">Damper</text>
+            </g>
+            <rect x="52" y="5" width="113" height="6" fill="#b9bfc8"/><rect x="52" y="12" width="95.8" height="6" fill="#c2185b"/>
+            <rect x="52" y="26" width="39.2" height="6" fill="#b9bfc8"/><rect x="52" y="33" width="27.9" height="6" fill="#c2185b"/>
+            <rect x="52" y="47" width="38.8" height="6" fill="#b9bfc8"/><rect x="52" y="54" width="37.4" height="6" fill="#c2185b"/>
+            <rect x="52" y="68" width="43.6" height="6" fill="#b9bfc8"/><rect x="52" y="75" width="23" height="6" fill="#c2185b"/>
+            <g fill="#5d6672" font-size="6.8">
+              <text x="168" y="10.6">3082</text><text x="150.8" y="17.6" font-weight="700" fill="#c2185b">2612</text>
+              <text x="94.2" y="31.6">1070</text><text x="82.9" y="38.6" font-weight="700" fill="#c2185b">761</text>
+              <text x="93.8" y="52.6">1057</text><text x="92.4" y="59.6" font-weight="700" fill="#c2185b">1020</text>
+              <text x="98.6" y="73.6">1188</text><text x="78" y="80.6" font-weight="700" fill="#c2185b">627</text>
+            </g>
+          </svg>
