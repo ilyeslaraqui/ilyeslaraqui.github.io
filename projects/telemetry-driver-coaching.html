@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telemetry maps and driver coaching – Ilyes Laraqui Houssaini</title>
+<meta name="description" content="MATLAB tools that turn logged car data into track heat maps, used to compare setups and coach drivers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+ <a class="mark" href="../index.html">Ilyes Laraqui Houssaini</a>
+ <nav aria-label="Main">
+  <a href="../index.html#work">Work</a>
+  <a href="../index.html#method">How I work</a>
+  <a href="../index.html#about">About</a>
+  <a href="../Ilyes_Laraqui_Houssaini_Portfolio.pdf" download>PDF portfolio</a>
+ </nav>
+</header>
+
+<main id="main" class="pj">
+ <p class="back"><a href="../index.html#work">All work</a></p>
+ <h1>Telemetry maps and driver coaching</h1>
+ <ul class="tags" aria-label="Skills"><li><a href="../index.html#data">Data & analysis</a></li></ul>
+ <p class="lede">I wanted drivers and engineers to see where on the track time was being won and lost, rather than reading it off a column of numbers.</p>
+ <dl class="meta"><div><dt>Role</dt><dd>Performance Leader</dd></div><div><dt>Where</dt><dd>UCL Formula Student</dd></div><div><dt>When</dt><dd>2023 – 2024</dd></div><div><dt>Tools</dt><dd>MATLAB, LifeRacing ECU data</dd></div></dl>
+ <dl class="nums"><div><dt>5.8 s</dt><dd>lap time gained by the slower driver</dd></div><div><dt>1:10.623 → 1:04.832</dt><dd>lap time before and after coaching</dd></div></dl>
+ <div class="body">
+<section class="two">
+ <div>
+  <p>I wrote MATLAB scripts that turn logged throttle, brake, gear, ride height and roll and yaw rates into heat maps drawn on the track outline. I first checked the tool on FS Sim Series data, comparing a generic setup with an updated one. The maps here are from that check.</p>
+  <p>I then ran the same tool on the car's LifeRacing ECU data. Overlaying two drivers showed where the slower one was losing time and where to brake and change up. Their lap came down from <b>1:10.623 to 1:04.832</b>.</p>
+ </div>
+ <div class="pair"><figure class=""><div class="frame"><img src="../img/throttle-generic.png" alt="Throttle map, generic setup." loading="lazy" class="contain"></div><figcaption>Throttle map, generic setup.</figcaption></figure><figure class=""><div class="frame"><img src="../img/throttle-updated.png" alt="Throttle map, updated setup." loading="lazy" class="contain"></div><figcaption>Throttle map, updated setup.</figcaption></figure></div>
+</section>
+</div>
+ <nav class="pager" aria-label="More projects">
+  <a href="front-suspension.html"><span>Previous</span>Pull-rod mono-shock front suspension</a>
+  <a href="cooling-model.html"><span>Next</span>Cooling model and sidepod redesign</a>
+ </nav>
+</main>
+
+<footer class="site" id="contact">
+ <div>
+  <p class="big">Get in touch</p>
+  <p><a href="mailto:laraquiilyes@gmail.com">laraquiilyes@gmail.com</a></p>
+ </div>
+ <ul>
+  <li><a href="https://www.linkedin.com/in/ilyes-laraqui-houssa%C3%AFni-b3003a238" rel="me">LinkedIn</a></li>
+  <li><a href="../Ilyes_Laraqui_Houssaini_Portfolio.pdf" download>Download the PDF portfolio</a></li>
+ </ul>
+ <p class="small">London, United Kingdom. Racing Bulls work is shown without company images under NDA.</p>
+</footer>
+</body>
+</html>

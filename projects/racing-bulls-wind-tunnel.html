@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wind tunnel hardware at Racing Bulls F1 – Ilyes Laraqui Houssaini</title>
+<meta name="description" content="Model parts and test rigs for the aero team: a full wheel assembly with tyre deformers, a radiator correlation rig, and fixes that kept the tunnel running.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+ <a class="mark" href="../index.html">Ilyes Laraqui Houssaini</a>
+ <nav aria-label="Main">
+  <a href="../index.html#work">Work</a>
+  <a href="../index.html#method">How I work</a>
+  <a href="../index.html#about">About</a>
+  <a href="../Ilyes_Laraqui_Houssaini_Portfolio.pdf" download>PDF portfolio</a>
+ </nav>
+</header>
+
+<main id="main" class="pj">
+ <p class="back"><a href="../index.html#work">All work</a></p>
+ <h1>Wind tunnel hardware at Racing Bulls F1</h1>
+ <ul class="tags" aria-label="Skills"><li><a href="../index.html#design">Design</a></li><li><a href="../index.html#modelling">Modelling & simulation</a></li></ul>
+ <p class="lede">A year designing the hardware the aero team uses to test new ideas in the wind tunnel, from model parts to test rigs, and following each part through manufacture, assembly and testing.</p>
+ <dl class="meta"><div><dt>Role</dt><dd>Mechanical design placement, Wind Tunnel Engineering</dd></div><div><dt>Where</dt><dd>Racing Bulls F1 (Visa Cash App RB)</dd></div><div><dt>When</dt><dd>Jul 2025 – Jul 2026</dd></div><div><dt>Tools</dt><dd>Siemens NX, NX FEA, BS 8888 GD&T</dd></div></dl>
+ <dl class="nums"><div><dt>0.8 mm</dt><dd>max tyre-shape difference, FEA vs laser scan</dd></div><div><dt>6 m</dt><dd>radiator rig, 14 bonded sections</dd></div><div><dt>15 / 15</dt><dd>assemblies correct after a 5-year problem was fixed</dd></div><div><dt>3 h</dt><dd>from part clash found to new drawing issued</dd></div></dl>
+ <div class="body">
+<section class="two">
+ <div>
+  <h2>Wheel assembly and tyre deformers</h2>
+  <p>Tyre shape has a big effect on diffuser and rear brake duct flow, so the tyre in the tunnel has to match the shape it has on track. Starting from the aero surfaces, I designed the rims, hubs, wheel covers and the deformers that push the outboard shoulder of the tyre out to its loaded shape. I used one representative profile and revolved it through 360°.</p>
+  <p>I owned the parts end-to-end: released them to manufacturing, assembled and balanced the rims, and fitted the wheels to the model myself. The built assembly matched the FEA model to within <b>0.8 mm</b> on a laser scan.</p>
+ </div>
+ <figure class="svg diagram"><div class="frame"><svg viewBox="16 6 172 164">
+          <!-- wheel parts -->
+          <path d="M40 150 L40 84 L60 84 L66 92 L88 92 L88 150 Z" fill="#5d6672"/>
+          <rect x="88" y="96" width="74" height="54" fill="#8b939e"/>
+          <rect x="162" y="66" width="7" height="84" fill="#3f4650"/>
+          <text x="104" y="128" text-anchor="middle" fill="#fff" font-size="7.6" font-weight="600">rim &amp; hub</text>
+          <!-- free tyre shape -->
+          <path d="M40 84 C38 52 44 30 70 26 L128 26 C150 28 160 42 162 66" fill="none" stroke="#9aa1ab" stroke-width="1.4" stroke-dasharray="3 2.5"/>
+          <!-- deformed tyre shape -->
+          <path d="M40 84 C38 52 44 30 70 26 L126 24 C156 20 176 34 169 66" fill="none" stroke="#14171c" stroke-width="2.4"/>
+          <!-- deformer -->
+          <path d="M126 96 L126 84 C134 70 146 56 160 46 C166 52 167 60 162 66 L162 96 Z" fill="#c2185b"/>
+          <path d="M126 24 C150 27 158 40 161 60" fill="none" stroke="#fff" stroke-width="1.1" stroke-dasharray="3 2.5" opacity=".85"/>
+          
+          <!-- labels -->
+          <text x="100" y="15" text-anchor="middle" fill="#14171c" font-size="8.4" font-weight="600">loaded on-track tyre shape</text>
+          <text x="60" y="61" fill="#5d6672" font-size="7.4">free shape</text>
+          <line x1="46" y1="58.5" x2="57" y2="58.5" stroke="#9aa1ab" stroke-width="1.4" stroke-dasharray="3 2.5"/>
+          <line x1="126" y1="80" x2="110" y2="74" stroke="#c2185b" stroke-width=".8"/>
+          <text x="108" y="76" text-anchor="end" fill="#c2185b" font-size="8" font-weight="600">deformer</text>
+          <line x1="20" y1="160" x2="184" y2="160" stroke="#14171c" stroke-width=".9" stroke-dasharray="6 2 1.5 2"/>
+          <text x="22" y="156" fill="#5d6672" font-size="7.4">inboard</text>
+          <text x="184" y="156" fill="#5d6672" font-size="7.4" text-anchor="end">outboard</text>
+          <text x="22" y="169" fill="#5d6672" font-size="7.4">wheel axis</text>
+          <text x="184" y="169" text-anchor="end" fill="#c2185b" font-size="7.6" font-weight="600">↻ revolved 360°</text>
+        </svg></div><figcaption>Section through the wheel. My own simplified illustration, not the actual part.</figcaption></figure>
+</section>
+<section class="two">
+ <div>
+  <h2>Radiator correlation rig</h2>
+  <p>Model radiators are tested on a rig and correlated with CFD before they go on the tunnel model. I designed a full-size version of that rig concept: a 6 m "mini wind tunnel" built from 14 bonded and sanded sections, with a real radiator core mounted inside it as a cross-section.</p>
+  <p>It measures the pressure and velocity loss across the core, so the model radiator can be correlated against the real one.</p>
+ </div>
+ <figure class="svg diagram"><div class="frame"><svg viewBox="4 12 188 118">
+          <path d="M6 52 L32 52" stroke="#9aa1ab" stroke-width="1.4"/><path d="M28 48.5 L33 52 L28 55.5" fill="none" stroke="#9aa1ab" stroke-width="1.4"/>
+          <text x="6" y="45" fill="#5d6672" font-size="8">air</text>
+          <rect x="36" y="36" width="12" height="32" rx="2" fill="#7b8490"/>
+          <path d="M48 38 L60 44 L60 60 L48 66 Z" fill="#aab1bb"/>
+          <rect x="60" y="44" width="104" height="16" rx="1" fill="#14171c"/>
+          <g stroke="#fff" stroke-width=".7" opacity=".7">
+            <line x1="67.4" y1="44" x2="67.4" y2="60"/><line x1="74.8" y1="44" x2="74.8" y2="60"/><line x1="82.2" y1="44" x2="82.2" y2="60"/><line x1="89.6" y1="44" x2="89.6" y2="60"/><line x1="97" y1="44" x2="97" y2="60"/><line x1="104.4" y1="44" x2="104.4" y2="60"/><line x1="111.8" y1="44" x2="111.8" y2="60"/><line x1="119.2" y1="44" x2="119.2" y2="60"/><line x1="126.6" y1="44" x2="126.6" y2="60"/><line x1="134" y1="44" x2="134" y2="60"/><line x1="141.4" y1="44" x2="141.4" y2="60"/><line x1="148.8" y1="44" x2="148.8" y2="60"/><line x1="156.2" y1="44" x2="156.2" y2="60"/>
+          </g>
+          <rect x="136" y="40" width="9" height="24" fill="#c2185b"/>
+          <g stroke="#fff" stroke-width=".6"><line x1="136" y1="45" x2="145" y2="45"/><line x1="136" y1="50" x2="145" y2="50"/><line x1="136" y1="55" x2="145" y2="55"/><line x1="136" y1="60" x2="145" y2="60"/></g>
+          <path d="M164 44 C176 42 182 34 186 26 L186 78 C182 70 176 62 164 60 Z" fill="#aab1bb"/>
+          <g stroke="#c2185b" stroke-width="1.1" fill="#fff">
+            <line x1="124" y1="44" x2="124" y2="31"/><circle cx="124" cy="29" r="2.8"/>
+            <line x1="156" y1="44" x2="156" y2="31"/><circle cx="156" cy="29" r="2.8"/>
+          </g>
+          <text x="124" y="22" text-anchor="middle" fill="#14171c" font-size="8.2" font-weight="600">p₁, v₁</text>
+          <text x="158" y="22" text-anchor="middle" fill="#14171c" font-size="8.2" font-weight="600">p₂, v₂</text>
+          <text x="140.5" y="76" text-anchor="middle" fill="#c2185b" font-size="8" font-weight="600">radiator core</text>
+          <line x1="60" y1="90" x2="164" y2="90" stroke="#14171c" stroke-width=".8"/>
+          <line x1="60" y1="86" x2="60" y2="94" stroke="#14171c" stroke-width=".8"/><line x1="164" y1="86" x2="164" y2="94" stroke="#14171c" stroke-width=".8"/>
+          <text x="112" y="102" text-anchor="middle" fill="#14171c" font-size="8.2" font-weight="600">≈ 6 m, 14 sections</text>
+          <text x="112" y="122" text-anchor="middle" fill="#5d6672" font-size="8">correlate model core ↔ real core</text>
+        </svg></div><figcaption>Rig layout. My own simplified illustration, not the actual rig.</figcaption></figure>
+</section>
+<section class="three">
+ <div><h3>A 5-year assembly problem, fixed</h3><p>One model assembly had been unreliable for more than five years. I traced it to clearances tighter than 0.010 mm that no drawing captured, added the correct GD&amp;T annotation, and checked the fix over 15 assembly iterations. All 15 assembled correctly.</p></div>
+ <div><h3>Overnight fix for a part clash</h3><p>At 20:00 I was the last mechanical engineer on site when the Model Shop found a part clash that had to be fixed before a 06:00 tunnel run. I up-issued the part, issued the new drawing within 3 hours, and stayed until it was made and fitted to the model for checking. The aero component it carried was then tested and released quickly as a track upgrade.</p></div>
+ <div><h3>Rigs, model parts and race weekends</h3><p>I designed several rigs for testing new technologies for the model, including a calibration rig and bench-test rigs, plus suspension pick-up parts checked against kinematic points. I also improved the model's metrology datum system. On race weekends I supported the race engineering team in the ops room by monitoring competitor radio.</p></div>
+</section>
+<p class="nda">Racing Bulls work is covered by an NDA, so no company images are shown. The diagrams are my own.</p>
+</div>
+ <nav class="pager" aria-label="More projects">
+  <a href="f1-data-python.html"><span>Previous</span>Exploring F1 timing data in Python</a>
+  <a href="fx-central-bank-drift.html"><span>Next</span>Do FX pairs drift before central bank decisions?</a>
+ </nav>
+</main>
+
+<footer class="site" id="contact">
+ <div>
+  <p class="big">Get in touch</p>
+  <p><a href="mailto:laraquiilyes@gmail.com">laraquiilyes@gmail.com</a></p>
+ </div>
+ <ul>
+  <li><a href="https://www.linkedin.com/in/ilyes-laraqui-houssa%C3%AFni-b3003a238" rel="me">LinkedIn</a></li>
+  <li><a href="../Ilyes_Laraqui_Houssaini_Portfolio.pdf" download>Download the PDF portfolio</a></li>
+ </ul>
+ <p class="small">London, United Kingdom. Racing Bulls work is shown without company images under NDA.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pull-rod mono-shock front suspension – Ilyes Laraqui Houssaini</title>
+<meta name="description" content="My dissertation for the UCL Formula Student car: one damper for both wheels, flexures instead of bearings, and a prototype to check the kinematics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+ <a class="mark" href="../index.html">Ilyes Laraqui Houssaini</a>
+ <nav aria-label="Main">
+  <a href="../index.html#work">Work</a>
+  <a href="../index.html#method">How I work</a>
+  <a href="../index.html#about">About</a>
+  <a href="../Ilyes_Laraqui_Houssaini_Portfolio.pdf" download>PDF portfolio</a>
+ </nav>
+</header>
+
+<main id="main" class="pj">
+ <p class="back"><a href="../index.html#work">All work</a></p>
+ <h1>Pull-rod mono-shock front suspension</h1>
+ <ul class="tags" aria-label="Skills"><li><a href="../index.html#design">Design</a></li><li><a href="../index.html#modelling">Modelling & simulation</a></li></ul>
+ <p class="lede">UCL's front suspension hadn't changed since 2014: push-rod double wishbones with a damper at each corner. It was heavy and expensive, and drivers said the car lacked grip in fast corners.</p>
+ <dl class="meta"><div><dt>Role</dt><dd>Individual dissertation (77/100), as Technical Director</dd></div><div><dt>Where</dt><dd>UCL Formula Student</dd></div><div><dt>When</dt><dd>2024 – 2025</dd></div><div><dt>Tools</dt><dd>Fusion 360, MATLAB, kinematic simulation, hand calculations</dd></div></dl>
+ <dl class="nums"><div><dt>−26.2%</dt><dd>system mass, 7.73 → 5.70 kg (target −10%)</dd></div><div><dt>−9.2%</dt><dd>system cost, £6,724 → £6,108</dd></div><div><dt>0.22°</dt><dd>max camber difference, prototype vs simulation</dd></div><div><dt>6 / 6</dt><dd>design targets met</dd></div></dl>
+ <div class="body">
+<section class="two">
+ <div>
+  <h2>Geometry from what the tyre needs</h2>
+  <p>I doubled the camber-gain target to −0.8° per inch of travel (from −0.4°), set the pick-up points from the swing-axle length (1819 mm) and checked them in kinematic simulation: camber gain −0.78°/in, motion ratio 1.42 and constant in bump, roll centre 42 mm, anti-dive 11%, bump steer 0.05 mm/in.</p>
+  <h2>One damper, tunable roll</h2>
+  <p>A single damper handles both wheels, which lowers the centre of mass. The shared rocker works as a torsion bar in roll, so roll stiffness can be changed separately from heave by choosing one of three pull-rod mounting holes.</p>
+  <h2>Sized for the worst case</h2>
+  <p>I hand-calculated braking, acceleration, cornering and a 5 g kerb-strike load case, giving member loads up to 11.7 kN, and chose T45 wishbones, 4130 tie rods and EN24T steel. I replaced spherical bearings with blade flexures, sized in a MATLAB script using large-deflection beam theory and checked for bending, von Mises and buckling.</p>
+ </div>
+ <div class="stack">
+  <figure class=""><div class="frame"><img src="../img/front-corner.jpg" alt="Pull-rod front corner, re-using the existing uprights." loading="lazy"></div><figcaption>Pull-rod front corner, re-using the existing uprights.</figcaption></figure>
+  <figure class="wide"><div class="frame"><img src="../img/rocker.jpg" alt="One damper for both wheels. The rocker doubles as an adjustable torsion bar." loading="lazy"></div><figcaption>One damper for both wheels. The rocker doubles as an adjustable torsion bar.</figcaption></figure>
+ </div>
+</section>
+<section class="two">
+ <div>
+  <h2>Checked on a real prototype</h2>
+  <p>I built a plywood and 3D-printed rig to measure the kinematics. Measured camber gain matched the simulation to within 0.22° across the full wheel travel.</p>
+  <div class="pair"><figure class=""><div class="frame"><img src="../img/prototype.jpg" alt="Kinematic prototype I built." loading="lazy"></div><figcaption>Kinematic prototype I built.</figcaption></figure><figure class=""><div class="frame"><img src="../img/flexures.jpg" alt="Blade flexures on the car." loading="lazy"></div><figcaption>Blade flexures on the car.</figcaption></figure></div>
+ </div>
+ <div class="stack">
+  <figure class="svg chart"><div class="frame"><svg viewBox="0 0 200 88" font-size="7">
+            <g stroke="#d8dce2" stroke-width=".5">
+              <line x1="30" y1="36" x2="190" y2="36"/><line x1="30" y1="54" x2="190" y2="54"/><line x1="30" y1="72" x2="190" y2="72"/>
+            </g>
+            <line x1="30" y1="18" x2="190" y2="18" stroke="#9aa1ab" stroke-width=".8"/>
+            <g fill="#5d6672" text-anchor="end"><text x="27" y="20.4">0</text><text x="27" y="38.4">−0.3</text><text x="27" y="56.4">−0.6</text><text x="27" y="74.4">−0.9</text></g>
+            <g fill="#5d6672" text-anchor="middle"><text x="30" y="86">−10</text><text x="75.7" y="86">0</text><text x="121.4" y="86">10</text><text x="182" y="86">25 mm</text></g>
+            <polyline fill="none" stroke="#14171c" stroke-width="1.6" points="30,10.8 52.9,13.2 75.7,18 98.6,24 121.4,31.8 144.3,41.4 190,64.8"/>
+            <polyline fill="none" stroke="#c2185b" stroke-width="1.3" stroke-dasharray="3 2" points="30,9 52.9,12.6 75.7,24 98.6,27 121.4,39 144.3,48 190,78"/>
+            <g fill="#c2185b"><circle cx="30" cy="9" r="1.6"/><circle cx="52.9" cy="12.6" r="1.6"/><circle cx="75.7" cy="24" r="1.6"/><circle cx="98.6" cy="27" r="1.6"/><circle cx="121.4" cy="39" r="1.6"/><circle cx="144.3" cy="48" r="1.6"/><circle cx="190" cy="78" r="1.6"/></g>
+            <line x1="96" y1="5" x2="106" y2="5" stroke="#14171c" stroke-width="1.6"/><text x="108" y="7.4" fill="#14171c">simulation</text>
+            <line x1="146" y1="5" x2="156" y2="5" stroke="#c2185b" stroke-width="1.3" stroke-dasharray="3 2"/><text x="158" y="7.4" fill="#c2185b">prototype</text>
+          </svg></div><figcaption>Camber change vs wheel travel: simulation vs prototype.</figcaption></figure>
+  <figure class="svg chart"><div class="frame"><svg viewBox="0 0 200 88" font-size="7.4">
+            <g fill="#5d6672" text-anchor="end">
+              <text x="48" y="14">Wishbones</text><text x="48" y="35">Pull-rods</text><text x="48" y="56">Rocker</text><text x="48" y="77">Damper</text>
+            </g>
+            <rect x="52" y="5" width="113" height="6" fill="#b9bfc8"/><rect x="52" y="12" width="95.8" height="6" fill="#c2185b"/>
+            <rect x="52" y="26" width="39.2" height="6" fill="#b9bfc8"/><rect x="52" y="33" width="27.9" height="6" fill="#c2185b"/>
+            <rect x="52" y="47" width="38.8" height="6" fill="#b9bfc8"/><rect x="52" y="54" width="37.4" height="6" fill="#c2185b"/>
+            <rect x="52" y="68" width="43.6" height="6" fill="#b9bfc8"/><rect x="52" y="75" width="23" height="6" fill="#c2185b"/>
+            <g fill="#5d6672" font-size="6.8">
+              <text x="168" y="10.6">3082</text><text x="150.8" y="17.6" font-weight="700" fill="#c2185b">2612</text>
+              <text x="94.2" y="31.6">1070</text><text x="82.9" y="38.6" font-weight="700" fill="#c2185b">761</text>
+              <text x="93.8" y="52.6">1057</text><text x="92.4" y="59.6" font-weight="700" fill="#c2185b">1020</text>
+              <text x="98.6" y="73.6">1188</text><text x="78" y="80.6" font-weight="700" fill="#c2185b">627</text>
+            </g>
+          </svg></div><figcaption>Mass by assembly (g): previous design in grey, mine in pink.</figcaption></figure>
+ </div>
+</section>
+</div>
+ <nav class="pager" aria-label="More projects">
+  <a href="fx-central-bank-drift.html"><span>Previous</span>Do FX pairs drift before central bank decisions?</a>
+  <a href="telemetry-driver-coaching.html"><span>Next</span>Telemetry maps and driver coaching</a>
+ </nav>
+</main>
+
+<footer class="site" id="contact">
+ <div>
+  <p class="big">Get in touch</p>
+  <p><a href="mailto:laraquiilyes@gmail.com">laraquiilyes@gmail.com</a></p>
+ </div>
+ <ul>
+  <li><a href="https://www.linkedin.com/in/ilyes-laraqui-houssa%C3%AFni-b3003a238" rel="me">LinkedIn</a></li>
+  <li><a href="../Ilyes_Laraqui_Houssaini_Portfolio.pdf" download>Download the PDF portfolio</a></li>
+ </ul>
+ <p class="small">London, United Kingdom. Racing Bulls work is shown without company images under NDA.</p>
+</footer>
+</body>
+</html>

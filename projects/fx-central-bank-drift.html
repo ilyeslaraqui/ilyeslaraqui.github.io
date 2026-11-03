@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do FX pairs drift before central bank decisions? – Ilyes Laraqui Houssaini</title>
+<meta name="description" content="An event study on 185 Fed, ECB and BoE meetings with a permutation test and a walk-forward backtest. The answer was no, and the work shows how I made sure of it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+ <a class="mark" href="../index.html">Ilyes Laraqui Houssaini</a>
+ <nav aria-label="Main">
+  <a href="../index.html#work">Work</a>
+  <a href="../index.html#method">How I work</a>
+  <a href="../index.html#about">About</a>
+  <a href="../Ilyes_Laraqui_Houssaini_Portfolio.pdf" download>PDF portfolio</a>
+ </nav>
+</header>
+
+<main id="main" class="pj">
+ <p class="back"><a href="../index.html#work">All work</a></p>
+ <h1>Do FX pairs drift before central bank decisions?</h1>
+ <ul class="tags" aria-label="Skills"><li><a href="../index.html#quant">Quantitative</a></li><li><a href="../index.html#data">Data & analysis</a></li></ul>
+ <p class="lede">US equities are known to drift up before Fed announcements. I tested whether EUR/USD, GBP/USD and USD/JPY do something similar the day before the Fed, ECB and Bank of England announce rate decisions.</p>
+ <dl class="meta"><div><dt>Role</dt><dd>Capstone project, Data Structures & Algorithms</dd></div><div><dt>Where</dt><dd>MSc Financial Engineering, Imperial College London</dd></div><div><dt>When</dt><dd>Oct 2026</dd></div><div><dt>Tools</dt><dd>Python (pandas, NumPy), yfinance, matplotlib</dd></div></dl>
+ <dl class="nums"><div><dt>185</dt><dd>scheduled meetings, 2019–2026</dd></div><div><dt>p = 0.97</dt><dd>pooled permutation test, 20,000 shuffles</dd></div><div><dt>−1.06</dt><dd>Sharpe of the walk-forward strategy</dd></div><div><dt>161</dt><dd>trades, each out-of-sample by construction</dd></div></dl>
+ <div class="body">
+<section class="two">
+ <div>
+  <h2>Set-up</h2>
+  <p>For each meeting I measured the return over the one full trading day before the decision, stopping short of decision day so the market's reaction to the announcement isn't mixed in. ECB and BoE meetings use EUR/USD and GBP/USD. Fed meetings use a dollar-strength index built from all three pairs.</p>
+  <p>The control group is every ordinary trading day, excluding any day within 3 days of another bank's meeting: 4,083 observations. Unscheduled emergency cuts, like March 2020, were left out because the market couldn't have known they were coming.</p>
+  <h2>Testing for an effect</h2>
+  <p>FX returns have fat tails, so instead of a t-test I used a permutation test: shuffle the event and control labels 20,000 times and see how often chance alone produces a difference as large as the real one. Pooled p = 0.97, and no bank on its own came close to significance. Splitting the sample in time, the effect also flips sign: +1.97 bps in 2019–2023, −3.89 bps in 2024–2026.</p>
+ </div>
+ <div class="stack">
+  <figure class=""><div class="frame"><img src="../img/fx-null.png" alt="The observed difference (−0.12 bps) sits in the middle of 20,000 random relabellings." loading="lazy" class="contain"></div><figcaption>The observed difference (−0.12 bps) sits in the middle of 20,000 random relabellings.</figcaption></figure>
+  <figure class=""><div class="frame"><img src="../img/fx-by-bank.png" alt="Pre-announcement return vs an ordinary day, by bank, with p-values." loading="lazy" class="contain"></div><figcaption>Pre-announcement return vs an ordinary day, by bank, with p-values.</figcaption></figure>
+ </div>
+</section>
+<section class="two">
+ <div>
+  <h2>Trying to trade it anyway</h2>
+  <p>Before each meeting, the strategy trades in the direction of that bank's average return at its previous meetings, with a minimum of 8 meetings of history and 1.5 bps cost each way. The <code>.shift(1)</code> in the signal makes sure a meeting's own outcome never feeds its own trade, so every one of the 161 trades is out-of-sample.</p>
+  <p>It lost money in every cut of the data: net −14.2%, Sharpe −1.06, maximum drawdown −15.2%. Returns were negative even before costs.</p>
+  <h2>What I'd want a reviewer to notice</h2>
+  <ul>
+   <li>Every setting (window, control buffer, minimum history) was fixed before I looked at results. Nothing was swept to find the best-looking value.</li>
+   <li>When the backtest lost money, I didn't flip the sign of the rule. That would have been fitting to the result.</li>
+   <li>The three pairs aren't three independent bets: the dollar is in all of them, so the strategy is closer to one dollar view than a diversified one.</li>
+  </ul>
+ </div>
+ <figure class="svg chart"><div class="frame"><svg viewBox="0 0 640 300" role="img" aria-label="Cumulative net wealth fell from 1.00 to 0.86 over 161 trades; maximum drawdown 15.2%">
+<line x1="52" x2="624" y1="32.9" y2="32.9" class="grid"/>
+<text x="44" y="36.9" text-anchor="end" class="ax">1.00</text>
+<line x1="52" x2="624" y1="80.1" y2="80.1" class="grid"/>
+<text x="44" y="84.1" text-anchor="end" class="ax">0.95</text>
+<line x1="52" x2="624" y1="127.3" y2="127.3" class="grid"/>
+<text x="44" y="131.3" text-anchor="end" class="ax">0.90</text>
+<line x1="52" x2="624" y1="174.6" y2="174.6" class="grid"/>
+<text x="44" y="178.6" text-anchor="end" class="ax">0.85</text>
+<polyline points="52.0,32.9 55.6,32.1 59.1,31.7 62.7,29.2 66.2,22.6 69.8,38.8 73.3,41.0 76.9,42.1 80.4,42.4 84.0,47.8 87.5,51.3 91.1,55.3 94.6,60.7 98.2,68.3 101.7,67.9 105.3,72.0 108.8,69.2 112.4,66.8 116.0,65.0 119.5,51.3 123.1,43.1 126.6,43.1 130.2,42.7 133.7,34.9 137.3,39.9 140.8,40.8 144.4,42.2 147.9,46.0 151.5,47.5 155.0,47.4 158.6,48.6 162.1,49.2 165.7,50.4 169.2,52.1 172.8,53.1 176.3,51.6 179.9,52.5 183.5,49.5 187.0,47.9 190.6,45.6 194.1,45.7 197.7,46.2 201.2,45.3 204.8,44.5 208.3,47.3 211.9,49.4 215.4,47.5 219.0,46.5 222.5,49.2 226.1,53.0 229.6,47.7 233.2,50.6 236.7,53.2 240.3,50.8 243.9,55.4 247.4,58.4 251.0,58.4 254.5,59.2 258.1,63.4 261.6,73.5 265.2,81.3 268.7,79.3 272.3,87.6 275.8,92.6 279.4,106.8 282.9,107.4 286.5,114.3 290.0,121.4 293.6,119.9 297.1,119.6 300.7,112.9 304.2,107.0 307.8,104.1 311.4,103.4 314.9,106.7 318.5,106.6 322.0,111.9 325.6,115.6 329.1,110.7 332.7,107.5 336.2,106.8 339.8,105.6 343.3,103.6 346.9,105.7 350.4,103.7 354.0,104.9 357.5,107.6 361.1,107.5 364.6,108.5 368.2,109.3 371.8,115.5 375.3,119.5 378.9,120.6 382.4,118.6 386.0,116.2 389.5,117.4 393.1,119.3 396.6,120.8 400.2,122.2 403.7,122.2 407.3,121.7 410.8,121.3 414.4,121.7 417.9,126.7 421.5,122.9 425.0,125.0 428.6,124.3 432.1,123.8 435.7,123.9 439.3,123.5 442.8,122.1 446.4,123.5 449.9,126.2 453.5,123.6 457.0,125.7 460.6,130.9 464.1,136.8 467.7,138.7 471.2,138.4 474.8,139.9 478.3,139.1 481.9,140.5 485.4,143.7 489.0,132.6 492.5,132.1 496.1,131.2 499.7,134.9 503.2,132.9 506.8,129.0 510.3,134.3 513.9,135.6 517.4,144.2 521.0,141.1 524.5,148.0 528.1,148.2 531.6,153.1 535.2,150.8 538.7,154.1 542.3,152.7 545.8,152.4 549.4,159.6 552.9,160.6 556.5,163.4 560.0,163.9 563.6,161.8 567.2,160.8 570.7,162.3 574.3,158.8 577.8,156.1 581.4,159.0 584.9,157.8 588.5,158.4 592.0,159.3 595.6,158.9 599.1,160.4 602.7,161.2 606.2,162.3 609.8,164.6 613.3,164.5 616.9,164.7 620.4,168.1 624.0,166.5" fill="none" class="line-a" stroke-width="2"/>
+<text x="624" y="24" text-anchor="end" class="lab">−14.2% after 161 trades</text>
+<text x="52" y="12" class="ax">Net wealth (start = 1)</text>
+<line x1="52" x2="624" y1="210.0" y2="210.0" class="grid"/>
+<text x="44" y="214.0" text-anchor="end" class="ax">0%</text>
+<line x1="52" x2="624" y1="227.8" y2="227.8" class="grid"/>
+<text x="44" y="231.8" text-anchor="end" class="ax">-5%</text>
+<line x1="52" x2="624" y1="245.6" y2="245.6" class="grid"/>
+<text x="44" y="249.6" text-anchor="end" class="ax">-10%</text>
+<line x1="52" x2="624" y1="263.3" y2="263.3" class="grid"/>
+<text x="44" y="267.3" text-anchor="end" class="ax">-15%</text>
+<path d="M52.0,210.0 L52.0,210.0 L55.6,210.0 L59.1,210.0 L62.7,210.0 L66.2,210.0 L69.8,216.0 L73.3,216.8 L76.9,217.3 L80.4,217.4 L84.0,219.4 L87.5,220.7 L91.1,222.2 L94.6,224.2 L98.2,227.0 L101.7,226.9 L105.3,228.4 L108.8,227.4 L112.4,226.5 L116.0,225.8 L119.5,220.7 L123.1,217.6 L126.6,217.6 L130.2,217.5 L133.7,214.6 L137.3,216.4 L140.8,216.8 L144.4,217.3 L147.9,218.7 L151.5,219.3 L155.0,219.3 L158.6,219.7 L162.1,219.9 L165.7,220.4 L169.2,221.0 L172.8,221.4 L176.3,220.8 L179.9,221.1 L183.5,220.0 L187.0,219.4 L190.6,218.6 L194.1,218.6 L197.7,218.8 L201.2,218.5 L204.8,218.2 L208.3,219.2 L211.9,220.0 L215.4,219.3 L219.0,218.9 L222.5,219.9 L226.1,221.3 L229.6,219.3 L233.2,220.4 L236.7,221.4 L240.3,220.5 L243.9,222.2 L247.4,223.3 L251.0,223.3 L254.5,223.6 L258.1,225.2 L261.6,229.0 L265.2,231.9 L268.7,231.1 L272.3,234.2 L275.8,236.1 L279.4,241.4 L282.9,241.6 L286.5,244.1 L290.0,246.8 L293.6,246.2 L297.1,246.1 L300.7,243.6 L304.2,241.4 L307.8,240.4 L311.4,240.1 L314.9,241.3 L318.5,241.3 L322.0,243.3 L325.6,244.7 L329.1,242.8 L332.7,241.6 L336.2,241.4 L339.8,240.9 L343.3,240.2 L346.9,241.0 L350.4,240.2 L354.0,240.7 L357.5,241.7 L361.1,241.6 L364.6,242.0 L368.2,242.3 L371.8,244.6 L375.3,246.1 L378.9,246.5 L382.4,245.8 L386.0,244.9 L389.5,245.3 L393.1,246.0 L396.6,246.6 L400.2,247.1 L403.7,247.1 L407.3,246.9 L410.8,246.8 L414.4,246.9 L417.9,248.8 L421.5,247.3 L425.0,248.1 L428.6,247.9 L432.1,247.7 L435.7,247.7 L439.3,247.6 L442.8,247.1 L446.4,247.6 L449.9,248.6 L453.5,247.6 L457.0,248.4 L460.6,250.3 L464.1,252.5 L467.7,253.2 L471.2,253.1 L474.8,253.7 L478.3,253.4 L481.9,253.9 L485.4,255.1 L489.0,251.0 L492.5,250.8 L496.1,250.5 L499.7,251.8 L503.2,251.1 L506.8,249.6 L510.3,251.6 L513.9,252.1 L517.4,255.3 L521.0,254.1 L524.5,256.7 L528.1,256.8 L531.6,258.6 L535.2,257.8 L538.7,259.0 L542.3,258.4 L545.8,258.3 L549.4,261.0 L552.9,261.4 L556.5,262.4 L560.0,262.6 L563.6,261.9 L567.2,261.5 L570.7,262.0 L574.3,260.7 L577.8,259.7 L581.4,260.8 L584.9,260.4 L588.5,260.6 L592.0,260.9 L595.6,260.8 L599.1,261.3 L602.7,261.6 L606.2,262.0 L609.8,262.9 L613.3,262.9 L616.9,262.9 L620.4,264.2 L624.0,263.6 L624.0,210.0 Z" class="area-b"/>
+<text x="52" y="204" class="ax">Drawdown</text>
+<text x="52.0" y="296" text-anchor="middle" class="ax">0</text>
+<text x="194.1" y="296" text-anchor="middle" class="ax">40</text>
+<text x="336.2" y="296" text-anchor="middle" class="ax">80</text>
+<text x="478.3" y="296" text-anchor="middle" class="ax">120</text>
+<text x="620.4" y="296" text-anchor="middle" class="ax">160</text>
+<text x="338.0" y="296" text-anchor="middle" class="ax" dx="40"> </text>
+</svg></div><figcaption>Walk-forward strategy, net of costs, rebuilt from the trade log.</figcaption></figure>
+</section>
+</div>
+ <nav class="pager" aria-label="More projects">
+  <a href="racing-bulls-wind-tunnel.html"><span>Previous</span>Wind tunnel hardware at Racing Bulls F1</a>
+  <a href="front-suspension.html"><span>Next</span>Pull-rod mono-shock front suspension</a>
+ </nav>
+</main>
+
+<footer class="site" id="contact">
+ <div>
+  <p class="big">Get in touch</p>
+  <p><a href="mailto:laraquiilyes@gmail.com">laraquiilyes@gmail.com</a></p>
+ </div>
+ <ul>
+  <li><a href="https://www.linkedin.com/in/ilyes-laraqui-houssa%C3%AFni-b3003a238" rel="me">LinkedIn</a></li>
+  <li><a href="../Ilyes_Laraqui_Houssaini_Portfolio.pdf" download>Download the PDF portfolio</a></li>
+ </ul>
+ <p class="small">London, United Kingdom. Racing Bulls work is shown without company images under NDA.</p>
+</footer>
+</body>
+</html>
