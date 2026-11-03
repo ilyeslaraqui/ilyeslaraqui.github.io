@@ -129,6 +129,11 @@
   <a href="rear-suspension-and-parts.html"><span>Next</span>Rear suspension and parts for manufacture</a>
  </nav>
 </main>
+<script>
+if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
+}
+</script>
 
 <footer class="site" id="contact">
  <div>

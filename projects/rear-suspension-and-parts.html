@@ -33,10 +33,17 @@
 <section class="two">
  <div>
   <p>Before anything was made, I built a moving kinematic model in Fusion 360 to check the rocker motion and clearances in pure heave and in pure roll.</p>
-  <h2>Parts for a student workshop</h2>
-  <p>Many of my early parts had to be made by students, fit a crowded chassis and survive a race weekend: suspension travel and brake pressure sensor mounts for the data system, jigs to hold chassis tabs for welding, and a cooling tank I reverse-engineered and modelled.</p>
  </div>
  <div class="pair"><figure class=""><div class="frame"><img src="../img/rear-assembly.jpg" alt="Full rear assembly with uprights and brakes." loading="lazy"></div><figcaption>Full rear assembly with uprights and brakes.</figcaption></figure><figure class=""><div class="frame"><img src="../img/rear-rocker.jpg" alt="Heave and roll rocker package." loading="lazy"></div><figcaption>Heave and roll rocker package.</figcaption></figure></div>
+</section>
+<section>
+ <h2>The kinematic model moving</h2>
+ <p>In heave, both wheels move together and only the heave damper works. In roll, the wheels move in opposite directions and the roll damper takes the motion instead.</p>
+ <div class="pair videos"><figure class="video"><div class="frame"><video src="../video/rear-heave.mp4" poster="../video/rear-heave.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Pure heave: both wheels move together."></video></div><figcaption>Pure heave: both wheels move together.</figcaption></figure><figure class="video"><div class="frame"><video src="../video/rear-roll.mp4" poster="../video/rear-roll.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Pure roll: the wheels move in opposite directions."></video></div><figcaption>Pure roll: the wheels move in opposite directions.</figcaption></figure></div>
+</section>
+<section>
+ <h2>Parts for a student workshop</h2>
+ <p>Many of my early parts had to be made by students, fit a crowded chassis and survive a race weekend: suspension travel and brake pressure sensor mounts for the data system, jigs to hold chassis tabs for welding, and a cooling tank I reverse-engineered and modelled.</p>
 </section>
 <section class="grid4">
  <figure class=""><div class="frame"><img src="../img/sensor-susp.jpg" alt="Suspension travel sensor mounts." loading="lazy" class="contain"></div><figcaption>Suspension travel sensor mounts.</figcaption></figure>
@@ -50,6 +57,11 @@
   <a href="f1-data-python.html"><span>Next</span>Exploring F1 timing data in Python</a>
  </nav>
 </main>
+<script>
+if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
+}
+</script>
 
 <footer class="site" id="contact">
  <div>

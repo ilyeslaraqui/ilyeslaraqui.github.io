@@ -21,6 +21,11 @@ def fig(src, cap, cls='', alt=None, contain=False):
     return f'<figure class="{cls}"><div class="frame"><img src="../img/{src}" alt="{html.escape(alt or cap)}" loading="lazy"{c}></div><figcaption>{cap}</figcaption></figure>'
 
 
+def vid(name, cap):
+    return (f'<figure class="video"><div class="frame"><video src="../video/{name}.mp4" poster="../video/{name}.jpg" '
+            f'autoplay muted loop playsinline preload="metadata" aria-label="{html.escape(cap)}"></video></div><figcaption>{cap}</figcaption></figure>')
+
+
 def svgfig(name, cap, cls='', note=None):
     n = f'<span class="note">{note}</span>' if note else ''
     return f'<figure class="svg {cls}"><div class="frame">{SVG(name)}</div><figcaption>{cap}{n}</figcaption></figure>'
@@ -204,10 +209,17 @@ PROJECTS = [
 <section class="two">
  <div>
   <p>Before anything was made, I built a moving kinematic model in Fusion 360 to check the rocker motion and clearances in pure heave and in pure roll.</p>
-  <h2>Parts for a student workshop</h2>
-  <p>Many of my early parts had to be made by students, fit a crowded chassis and survive a race weekend: suspension travel and brake pressure sensor mounts for the data system, jigs to hold chassis tabs for welding, and a cooling tank I reverse-engineered and modelled.</p>
  </div>
  <div class="pair">{fig('rear-assembly.jpg', 'Full rear assembly with uprights and brakes.')}{fig('rear-rocker.jpg', 'Heave and roll rocker package.')}</div>
+</section>
+<section>
+ <h2>The kinematic model moving</h2>
+ <p>In heave, both wheels move together and only the heave damper works. In roll, the wheels move in opposite directions and the roll damper takes the motion instead.</p>
+ <div class="pair videos">{vid('rear-heave', 'Pure heave: both wheels move together.')}{vid('rear-roll', 'Pure roll: the wheels move in opposite directions.')}</div>
+</section>
+<section>
+ <h2>Parts for a student workshop</h2>
+ <p>Many of my early parts had to be made by students, fit a crowded chassis and survive a race weekend: suspension travel and brake pressure sensor mounts for the data system, jigs to hold chassis tabs for welding, and a cooling tank I reverse-engineered and modelled.</p>
 </section>
 <section class="grid4">
  {fig('sensor-susp.jpg', 'Suspension travel sensor mounts.', contain=True)}
@@ -405,6 +417,11 @@ def project(i):
   <a href="{next_p['slug']}.html"><span>Next</span>{next_p['title']}</a>
  </nav>
 </main>
+<script>
+if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {{
+  document.querySelectorAll('video[autoplay]').forEach(function (v) {{ v.removeAttribute('autoplay'); v.pause(); v.controls = true; }});
+}}
+</script>
 ''' + FOOT('../')
 
 
